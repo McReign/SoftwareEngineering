@@ -1,0 +1,20 @@
+	Функциональное программирование
+1. Extension
+2. Generic
+3. ФП
+	public Y F(X x) 
+	{
+	}
+
+	pure function - чистые функции
+	immutability
+
+	Entity -> Mutable 
+	Value object -> Immutable
+
+4. LINQ (Language Integrated Query)
+	System.linq - Enumerable
+
+5. Lazy load
+6. Mock
+

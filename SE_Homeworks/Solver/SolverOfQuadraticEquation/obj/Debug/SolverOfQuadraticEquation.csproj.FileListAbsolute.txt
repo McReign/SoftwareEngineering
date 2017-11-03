@@ -1,0 +1,9 @@
+C:\Users\McReign\Desktop\LoD\EquationSolver\SolverOfQuadraticEquation\bin\Debug\SolverOfQuadraticEquation.exe.config
+C:\Users\McReign\Desktop\LoD\EquationSolver\SolverOfQuadraticEquation\bin\Debug\SolverOfQuadraticEquation.exe
+C:\Users\McReign\Desktop\LoD\EquationSolver\SolverOfQuadraticEquation\bin\Debug\SolverOfQuadraticEquation.pdb
+C:\Users\McReign\Desktop\LoD\EquationSolver\SolverOfQuadraticEquation\obj\Debug\SolverOfQuadraticEquation.csproj.CoreCompileInputs.cache
+C:\Users\McReign\Desktop\LoD\EquationSolver\SolverOfQuadraticEquation\obj\Debug\SolverOfQuadraticEquation.exe
+C:\Users\McReign\Desktop\LoD\EquationSolver\SolverOfQuadraticEquation\obj\Debug\SolverOfQuadraticEquation.pdb
+C:\Users\McReign\Desktop\LoD\EquationSolver\SolverOfQuadraticEquation\bin\Debug\EquationSolver.dll
+C:\Users\McReign\Desktop\LoD\EquationSolver\SolverOfQuadraticEquation\bin\Debug\EquationSolver.pdb
+C:\Users\McReign\Desktop\LoD\EquationSolver\SolverOfQuadraticEquation\obj\Debug\SolverOfQuadraticEquation.csprojResolveAssemblyReference.cache

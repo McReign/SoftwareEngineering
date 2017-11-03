@@ -1,0 +1,34 @@
+ООП:							DDD:
+  - Абстракция						  - Domain
+  - Инкапсуляция					  - Application
+							  - Infrastructure
+maintainability - поддерживаемость
+
+1) Название 						Unit - тесты
+2) Свойства						  - Возвращаемое значение
+3) Поведение						  - Состояние
+
+public class Car{
+
+        string model;
+        string color;
+        int countOfRent;
+        enum OcupationStatus status;
+	bool IsFreeToRent;
+	
+	SendToRent()
+	ReturnBack()
+	SendToCheckUp()
+	
+	
+ДЗ:
+	ООП приложение для аренды автомобилей в виде библиотеки
+	DateTimeOffset
+	Сделать Json - файлы, чтобы программа сохранялась при выходе (Json.Net) или вывод в память
+	Покрыть тестами
+	После каждых 10 аренд отправлять на тех осмотр
+
+	Методы: 
+		Получить список автомобилей на определенную дату
+		Арендовать автомобили
+	

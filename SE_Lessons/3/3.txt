@@ -1,0 +1,31 @@
+1)Наследование
+2)Полиморфизм
+3)Интерфейсы, зависимости
+4)SOLID
+
+Композиция лучше наследования!!!
+
+Stream (abstarct - можно только унаследоваться, экземпляр создавать нельзя)
+	-FileStream
+	-NetworkStream
+	-MemoryStream
+
+
+Есть три вида чата: канал, группа и приватный чат. 
+В канал может писать только автор, в группу - все члены члены группы, в приватный чат - оба собеседника. 
+Сообщения в чате можно редактировать и удалять. 
+Причём в группе администраторы могут удалять чьи угодно сообщения, но редактировать - только свои.
+
+implements IInterface(java) 
+: IInterface(c#)
+
+SOLID:  S - Single Responsibility	//
+        O - Open-Closed			//
+	L - Liskov Substitution		//      !!!
+        I - Interface Segregation	//
+	D - Dependency Injection	//
+
+DI-container
+   Unity
+   AutoFac
+   Spring

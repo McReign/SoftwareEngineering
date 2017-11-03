@@ -1,0 +1,6 @@
+C:\Users\McReign\Desktop\LoD\EquationSolver\EquationSolver\bin\Debug\EquationSolver.dll
+C:\Users\McReign\Desktop\LoD\EquationSolver\EquationSolver\bin\Debug\EquationSolver.pdb
+C:\Users\McReign\Desktop\LoD\EquationSolver\EquationSolver\obj\Debug\EquationSolver.csprojResolveAssemblyReference.cache
+C:\Users\McReign\Desktop\LoD\EquationSolver\EquationSolver\obj\Debug\EquationSolver.csproj.CoreCompileInputs.cache
+C:\Users\McReign\Desktop\LoD\EquationSolver\EquationSolver\obj\Debug\EquationSolver.dll
+C:\Users\McReign\Desktop\LoD\EquationSolver\EquationSolver\obj\Debug\EquationSolver.pdb

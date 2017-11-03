@@ -1,0 +1,36 @@
+C:\Users\McReign\Desktop\LoD\CarRent\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\McReign\Desktop\LoD\CarRent\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\McReign\Desktop\LoD\CarRent\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\McReign\Desktop\LoD\CarRent\Test\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\McReign\Desktop\LoD\CarRent\Test\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\McReign\Desktop\LoD\CarRent\Test\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\McReign\Desktop\LoD\CarRent\Test\bin\Debug\Test.dll
+C:\Users\McReign\Desktop\LoD\CarRent\Test\bin\Debug\Test.pdb
+C:\Users\McReign\Desktop\LoD\CarRent\Test\bin\Debug\CarRent.dll
+C:\Users\McReign\Desktop\LoD\CarRent\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\McReign\Desktop\LoD\CarRent\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\McReign\Desktop\LoD\CarRent\Test\bin\Debug\CarRent.pdb
+C:\Users\McReign\Desktop\LoD\CarRent\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\McReign\Desktop\LoD\CarRent\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\McReign\Desktop\LoD\CarRent\Test\obj\Debug\CarTests.csprojResolveAssemblyReference.cache
+C:\Users\McReign\Desktop\LoD\CarRent\Test\obj\Debug\CarTests.csproj.CoreCompileInputs.cache
+C:\Users\McReign\Desktop\LoD\CarRent\Test\obj\Debug\Test.dll
+C:\Users\McReign\Desktop\LoD\CarRent\Test\obj\Debug\Test.pdb
+C:\Users\McReign\YandexDisk\LoD\Software Engineering\2\CarRent\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\McReign\YandexDisk\LoD\Software Engineering\2\CarRent\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\McReign\YandexDisk\LoD\Software Engineering\2\CarRent\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\McReign\YandexDisk\LoD\Software Engineering\2\CarRent\Test\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\McReign\YandexDisk\LoD\Software Engineering\2\CarRent\Test\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\McReign\YandexDisk\LoD\Software Engineering\2\CarRent\Test\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\McReign\YandexDisk\LoD\Software Engineering\2\CarRent\Test\bin\Debug\Test.dll
+C:\Users\McReign\YandexDisk\LoD\Software Engineering\2\CarRent\Test\bin\Debug\Test.pdb
+C:\Users\McReign\YandexDisk\LoD\Software Engineering\2\CarRent\Test\bin\Debug\CarRent.dll
+C:\Users\McReign\YandexDisk\LoD\Software Engineering\2\CarRent\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\McReign\YandexDisk\LoD\Software Engineering\2\CarRent\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\McReign\YandexDisk\LoD\Software Engineering\2\CarRent\Test\bin\Debug\CarRent.pdb
+C:\Users\McReign\YandexDisk\LoD\Software Engineering\2\CarRent\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\McReign\YandexDisk\LoD\Software Engineering\2\CarRent\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\McReign\YandexDisk\LoD\Software Engineering\2\CarRent\Test\obj\Debug\CarTests.csprojResolveAssemblyReference.cache
+C:\Users\McReign\YandexDisk\LoD\Software Engineering\2\CarRent\Test\obj\Debug\CarTests.csproj.CoreCompileInputs.cache
+C:\Users\McReign\YandexDisk\LoD\Software Engineering\2\CarRent\Test\obj\Debug\Test.dll
+C:\Users\McReign\YandexDisk\LoD\Software Engineering\2\CarRent\Test\obj\Debug\Test.pdb

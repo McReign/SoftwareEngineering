@@ -1,0 +1,12 @@
+C:\Users\McReign.DESKTOP-PIGOJ9O\YandexDisk\LoD\Software Engineering\3\Leaguegram\Leaguegram\bin\Debug\Liguegram.dll
+C:\Users\McReign.DESKTOP-PIGOJ9O\YandexDisk\LoD\Software Engineering\3\Leaguegram\Leaguegram\bin\Debug\Liguegram.pdb
+C:\Users\McReign.DESKTOP-PIGOJ9O\YandexDisk\LoD\Software Engineering\3\Leaguegram\Leaguegram\obj\Debug\Leaguegram.csprojResolveAssemblyReference.cache
+C:\Users\McReign.DESKTOP-PIGOJ9O\YandexDisk\LoD\Software Engineering\3\Leaguegram\Leaguegram\obj\Debug\Leaguegram.csproj.CoreCompileInputs.cache
+C:\Users\McReign.DESKTOP-PIGOJ9O\YandexDisk\LoD\Software Engineering\3\Leaguegram\Leaguegram\obj\Debug\Liguegram.dll
+C:\Users\McReign.DESKTOP-PIGOJ9O\YandexDisk\LoD\Software Engineering\3\Leaguegram\Leaguegram\obj\Debug\Liguegram.pdb
+C:\Users\McReign.DESKTOP-PIGOJ9O\YandexDisk\LoD\Software Engineering\3\LeaguegramProject\Leaguegram\bin\Debug\Liguegram.dll
+C:\Users\McReign.DESKTOP-PIGOJ9O\YandexDisk\LoD\Software Engineering\3\LeaguegramProject\Leaguegram\bin\Debug\Liguegram.pdb
+C:\Users\McReign.DESKTOP-PIGOJ9O\YandexDisk\LoD\Software Engineering\3\LeaguegramProject\Leaguegram\obj\Debug\Leaguegram.csprojResolveAssemblyReference.cache
+C:\Users\McReign.DESKTOP-PIGOJ9O\YandexDisk\LoD\Software Engineering\3\LeaguegramProject\Leaguegram\obj\Debug\Leaguegram.csproj.CoreCompileInputs.cache
+C:\Users\McReign.DESKTOP-PIGOJ9O\YandexDisk\LoD\Software Engineering\3\LeaguegramProject\Leaguegram\obj\Debug\Liguegram.dll
+C:\Users\McReign.DESKTOP-PIGOJ9O\YandexDisk\LoD\Software Engineering\3\LeaguegramProject\Leaguegram\obj\Debug\Liguegram.pdb
