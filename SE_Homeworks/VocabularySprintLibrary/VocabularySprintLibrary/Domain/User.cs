@@ -1,22 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
+using VocabularySprintLibrary.Domain;
 
 namespace VocabularySprintLibrary
 {
-    public class User
+    internal class User
     {
         public User(Guid id, string nickname, DateTimeOffset registrationDate)
         {
-            Id = id;
+            UserId = id;
             Nickname = nickname;
             RegistrationDate = registrationDate;
+            vocabulary = new Vocabulary(Guid.NewGuid());  
         }
 
-        public Guid Id { get; }
-        public IEnumerable<Word> LearnedWords { get; set; }
-        public IEnumerable<Word> UnlearnedWords { get; set; }
+        public Guid UserId { get; }
         public string Nickname { get; }
         public DateTimeOffset RegistrationDate { get; }
+        public IVocabulary vocabulary { get; set; }
         
     }
 }

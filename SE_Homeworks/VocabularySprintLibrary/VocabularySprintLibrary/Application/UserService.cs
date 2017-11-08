@@ -2,7 +2,7 @@
 
 namespace VocabularySprintLibrary
 {
-    public class UserService : IUserService
+    internal class UserService : IUserService
     {
         public UserService(IUserRepository userRepository)
         {

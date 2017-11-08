@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,15 +43,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application\IVocabularyService.cs" />
-    <Compile Include="Domain\IUserRepository.cs" />
-    <Compile Include="Domain\IWord.cs" />
+    <Compile Include="Application\Inerfaces\ISprintGame.cs" />
+    <Compile Include="Application\Inerfaces\IVocabularyService.cs" />
+    <Compile Include="Application\SprintGame.cs" />
+    <Compile Include="Application\VocabularyService.cs" />
+    <Compile Include="Domain\DegreeOfLearn.cs" />
+    <Compile Include="Domain\Interfaces\IVocabulary.cs" />
+    <Compile Include="Domain\Interfaces\IUserRepository.cs" />
+    <Compile Include="Domain\Interfaces\IWordRepository.cs" />
     <Compile Include="Domain\User.cs" />
     <Compile Include="Application\UserService.cs" />
-    <Compile Include="Application\IUserService.cs" />
+    <Compile Include="Application\Inerfaces\IUserService.cs" />
+    <Compile Include="Domain\Vocabulary.cs" />
+    <Compile Include="Infrastructure\File.cs" />
     <Compile Include="Infrastructure\InMemoryUserRepository.cs" />
+    <Compile Include="Infrastructure\InMemoryWordRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Domain\Word.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
