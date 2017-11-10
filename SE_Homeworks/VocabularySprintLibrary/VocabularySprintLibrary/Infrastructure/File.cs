@@ -7,17 +7,17 @@ namespace VocabularySprintLibrary.Infrastructure
     {
         public File()
         {
-            dataDirectory = Directory.GetCurrentDirectory() + "/Data/";
+            //dataDirectory = "Data/";
         }
 
         public T ReadFromFile<T>(string filePath)
         {
-            if (!Directory.Exists(dataDirectory + filePath))
+            if (!Directory.Exists(filePath))
             {
-                Directory.CreateDirectory(dataDirectory + filePath);
+                Directory.CreateDirectory(filePath);
             }
             
-            StreamReader streamReader = new StreamReader(dataDirectory + filePath);
+            StreamReader streamReader = new StreamReader(filePath);
             string json = streamReader.ReadToEnd();
             T content = JsonConvert.DeserializeObject<T>(json);
             streamReader.Close();
@@ -29,16 +29,16 @@ namespace VocabularySprintLibrary.Infrastructure
         {
             string json = JsonConvert.SerializeObject(objectToSave);
 
-            if (!Directory.Exists(dataDirectory + filePath))
+            if (!Directory.Exists(filePath))
             {
-                Directory.CreateDirectory(dataDirectory + filePath);
+                Directory.CreateDirectory(filePath);
             }
 
-            StreamWriter streamWriter = new StreamWriter(dataDirectory + filePath);
+            StreamWriter streamWriter = new StreamWriter(filePath);
             streamWriter.Write(json);
             streamWriter.Close();
         }
 
-        public string dataDirectory { get; }
+        //public string dataDirectory { get; }
     }
 }

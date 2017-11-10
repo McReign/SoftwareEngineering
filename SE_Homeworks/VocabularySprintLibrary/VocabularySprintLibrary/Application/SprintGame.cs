@@ -3,7 +3,7 @@ using VocabularySprintLibrary.Infrastructure;
 
 namespace VocabularySprintLibrary.Application
 {
-    public class SprintGame 
+    public class SprintGame : ISprintGame
     {
         public SprintGame(string nameOfPlayer)
         {
@@ -13,11 +13,11 @@ namespace VocabularySprintLibrary.Application
 
         public void StartGame()
         {
-            IUserService userService = new UserService(userRepository);
+            userService = new UserService(userRepository);
 
             currentUser = userRepository.LoadUser(userService.RegistrationUser(NameOfPlayer));  
 
-            IVocabularyService vocabularyService = new VocabularyService(currentUser);
+            vocabularyService = new VocabularyService(currentUser);
         }
 
         public void FinishGame()
@@ -25,8 +25,10 @@ namespace VocabularySprintLibrary.Application
             userRepository.SaveUser(currentUser);
         }
 
-        public IUserRepository userRepository { get; private set; }
+        public IUserRepository userRepository { get; set; }
         public string NameOfPlayer { get; }
-        public IUser currentUser { get; private set; }
+        public IUser currentUser { get; set; }
+        public IVocabularyService vocabularyService { get; set; }
+        public IUserService userService { get; set; }
     }
 }

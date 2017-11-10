@@ -12,7 +12,7 @@ namespace VocabularySprintLibraryTests
     public class TestForVocabularyService
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TryingToLearnWord_WordShouldBeLearned()
         {
             //Arrange
             IUser user = new User(Guid.NewGuid(), "Bob", DateTimeOffset.Now); 

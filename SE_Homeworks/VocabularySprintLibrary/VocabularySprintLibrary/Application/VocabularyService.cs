@@ -19,14 +19,14 @@ namespace VocabularySprintLibrary.Application
             random = new Random();
         }
 
-        public bool CheckingAnswer(IWord word, string answer)
+        public bool CheckingAnswer(IWord word, bool answer)
         {
             if (IsContainingWord(word))
             {
                 throw new NotImplementedException();
             }
             
-            if (word.RightTranslation.Equals(answer))
+            if (word.Translation.Equals(randomValuesForWord[1]) == answer)
             {
                 TracingRightAnswer(word);
                 return true;
@@ -65,14 +65,16 @@ namespace VocabularySprintLibrary.Application
             }
         }
 
-        public IWord GetRandomWord()
+        public string[] GetRandomWord()
         {
             int IndexOfWordsValue = random.Next(Vocabulary.UnlearnedWords.ToList().Count - 1);
             int IndexOfWordsTranslation = random.Next(Vocabulary.UnlearnedWords.ToList().Count - 1);
-            IWord randomWord = new Word(Vocabulary.UnlearnedWords.ToList()[IndexOfWordsValue].Value,
-                Vocabulary.UnlearnedWords.ToList()[IndexOfWordsTranslation].RightTranslation);
+            string randomValue = Vocabulary.UnlearnedWords.ToList()[IndexOfWordsValue].Value;
+            string randomTranslation = Vocabulary.UnlearnedWords.ToList()[IndexOfWordsTranslation].Translation;
 
-            return randomWord;
+            randomValuesForWord = new string[2] { randomValue, randomTranslation };
+
+            return randomValuesForWord;
         }
 
         public bool IsContainingWord(IWord word)
@@ -83,6 +85,7 @@ namespace VocabularySprintLibrary.Application
         public IVocabulary Vocabulary { get; private set; }
         public int MaxCountOfLearn { get; }
         public int MinCountOfLearn { get; }
+        public string[] randomValuesForWord { get; private set; }
 
         Random random;
     }

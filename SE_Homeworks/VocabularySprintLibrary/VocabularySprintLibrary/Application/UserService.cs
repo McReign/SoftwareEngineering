@@ -12,9 +12,9 @@ namespace VocabularySprintLibrary
 
         public Guid RegistrationUser(string nickname)
         {
-            if(!_userRepository.users.ToList().Exists(currentUser => currentUser.Nickname == nickname))
+            if(!(_userRepository.users.ToList().Count != 0 &&_userRepository.users.ToList().Exists(currentUser => currentUser.Nickname == nickname)))
             {
-                throw new InvalidOperationException();
+                throw new Exception();
             }
 
             var userId = Guid.NewGuid();

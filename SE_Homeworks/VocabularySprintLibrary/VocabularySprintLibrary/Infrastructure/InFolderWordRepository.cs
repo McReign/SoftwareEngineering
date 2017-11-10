@@ -15,12 +15,12 @@ namespace VocabularySprintLibrary.Infrastructure
 
         public IEnumerable<IWord> LoadLearnedWords(IUser user)
         {
-            return file.ReadFromFile<List<IWord>>(user.UserId.ToString() + "/Learned Words.json");
+            return file.ReadFromFile<List<IWord>>("Learned Words.json");
         }
 
         public IEnumerable<IWord> LoadUnlearnedWords(IUser user)
         {
-            return file.ReadFromFile<List<IWord>>(user.UserId.ToString() + "/Unlearned Words.json");
+            return file.ReadFromFile<List<IWord>>("Unlearned Words.json");
         }
 
         public void AddWord(IUser user, IWord word)

@@ -6,7 +6,7 @@ namespace VocabularySprintLibrary.Domain.Interfaces
     {
          Guid WordId { get; }
          string Value { get; }
-         string RightTranslation { get; }
+         string Translation { get; }
          DegreeOfLearn degreeOfLearn { get; set; }
          int countOfSuccess { get; set; }
     }

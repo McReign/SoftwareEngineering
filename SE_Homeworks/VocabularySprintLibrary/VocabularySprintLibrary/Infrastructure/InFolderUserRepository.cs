@@ -35,8 +35,8 @@ namespace VocabularySprintLibrary.Infrastructure
                 throw new NotImplementedException();
             }
 
-            user.vocabulary.LearnedWords = wordRepository.LoadLearnedWords(user);
-            user.vocabulary.UnlearnedWords = wordRepository.LoadUnlearnedWords(user);
+            //user.vocabulary.LearnedWords = wordRepository.LoadLearnedWords(user);
+            //user.vocabulary.UnlearnedWords = wordRepository.LoadUnlearnedWords(user);
 
             return user;
         }
@@ -50,15 +50,16 @@ namespace VocabularySprintLibrary.Infrastructure
 
             List<IUser> listOfUsers = users.ToList();
             listOfUsers.Add(user);
+            users = listOfUsers;
 
-            file.SaveToFile("Users.json", listOfUsers);
+            //file.SaveToFile("Users.json", listOfUsers);
             
-            file.SaveToFile(user.UserId.ToString() + "/Learned Words.json", user.vocabulary.LearnedWords);
-            file.SaveToFile(user.UserId.ToString() + "/Unlearned Words.json", user.vocabulary.UnlearnedWords);
+            //file.SaveToFile("Learned Words.json", user.vocabulary.LearnedWords);
+            //file.SaveToFile("Unlearned Words.json", user.vocabulary.UnlearnedWords);
         }
 
         public File file { get; }
-        public IEnumerable<IUser> users { get; }
+        public IEnumerable<IUser> users { get; set; }
         public IWordRepository wordRepository { get; }
     }
 }

@@ -5,8 +5,8 @@ namespace VocabularySprintLibrary.Application
 {
     public interface IVocabularyService
     {
-        IWord GetRandomWord();
-        bool CheckingAnswer(IWord word, string answer);
+        string[] GetRandomWord();
+        bool CheckingAnswer(IWord word, bool answer);
         void TracingMistake(IWord word);
         void TracingRightAnswer(IWord word);
         bool IsContainingWord(IWord word);
@@ -14,5 +14,6 @@ namespace VocabularySprintLibrary.Application
         IVocabulary Vocabulary { get; }
         int MaxCountOfLearn { get; }
         int MinCountOfLearn { get; }
+        string[] randomValuesForWord { get; }
     }
 }

@@ -12,5 +12,7 @@ namespace VocabularySprintLibrary.Application
         IUserRepository userRepository { get; }
         string NameOfPlayer { get; }
         IUser currentUser { get; }
+        IVocabularyService vocabularyService { get; set; }
+        IUserService userService { get; set; }
     }
 }
