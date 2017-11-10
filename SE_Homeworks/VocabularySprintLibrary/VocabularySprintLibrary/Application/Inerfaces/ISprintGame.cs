@@ -1,10 +1,16 @@
 ﻿
 
+using VocabularySprintLibrary.Domain.Interfaces;
+
 namespace VocabularySprintLibrary.Application
 {
-    internal interface ISprintGame
+    public interface ISprintGame
     {
         void StartGame();
         void FinishGame();
+
+        IUserRepository userRepository { get; }
+        string NameOfPlayer { get; }
+        IUser currentUser { get; }
     }
 }

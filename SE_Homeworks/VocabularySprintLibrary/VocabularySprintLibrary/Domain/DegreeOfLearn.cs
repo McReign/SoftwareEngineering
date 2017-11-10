@@ -1,6 +1,6 @@
 ﻿namespace VocabularySprintLibrary.Domain
 {
-    internal enum DegreeOfLearn
+    public enum DegreeOfLearn
     {
         NotLearned = 0,
         Learned = 1

@@ -1,9 +1,10 @@
 ﻿using System;
 using VocabularySprintLibrary.Domain;
+using VocabularySprintLibrary.Domain.Interfaces;
 
 namespace VocabularySprintLibrary
 {
-    internal class User
+    public class User : IUser
     {
         public User(Guid id, string nickname, DateTimeOffset registrationDate)
         {
@@ -16,7 +17,7 @@ namespace VocabularySprintLibrary
         public Guid UserId { get; }
         public string Nickname { get; }
         public DateTimeOffset RegistrationDate { get; }
-        public IVocabulary vocabulary { get; set; }
+        public IVocabulary vocabulary { get; private set; }
         
     }
 }

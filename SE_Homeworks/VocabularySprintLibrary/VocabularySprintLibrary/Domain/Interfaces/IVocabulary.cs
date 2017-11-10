@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using VocabularySprintLibrary.Domain.Interfaces;
 
 namespace VocabularySprintLibrary.Domain
 {
-    internal interface IVocabulary
+    public interface IVocabulary
     {
-        IEnumerable<Word> LearnedWords { get; set; }
-        IEnumerable<Word> UnlearnedWords { get; set; }
+        IEnumerable<IWord> LearnedWords { get; set; }
+        IEnumerable<IWord> UnlearnedWords { get; set; }
 
         Guid VocabularyId { get; }
     }

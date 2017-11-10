@@ -3,19 +3,12 @@ using Newtonsoft.Json;
 
 namespace VocabularySprintLibrary.Infrastructure
 {
-    internal class File
+    public class File
     {
         public File()
         {
             dataDirectory = Directory.GetCurrentDirectory() + "/Data/";
         }
-
-        /*
-        internal void CreateFolder(string folderPath)
-        {
-            Directory.CreateDirectory(dataDirectory + folderPath);
-        }
-        */
 
         public T ReadFromFile<T>(string filePath)
         {

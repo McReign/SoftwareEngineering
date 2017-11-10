@@ -2,19 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using VocabularySprintLibrary.Domain;
+using VocabularySprintLibrary.Domain.Interfaces;
 
 namespace VocabularySprintLibrary.Infrastructure
 {
-    internal class InMemoryUserRepository : IUserRepository
+    public class InFolderUserRepository : IUserRepository
     {
-        public InMemoryUserRepository()
+        public InFolderUserRepository()
         {
-            users = file.ReadFromFile<List<User>>("Users.json");
-            wordRepository = new InMemoryWordRepository(this);
+            
+            users = new List<IUser>();
+            //users = file.ReadFromFile<List<IUser>>("Users.json");
+
+            wordRepository = new InFolderWordRepository(this);
             file = new File();
         }
 
-        public IEnumerable<User> LoadAllUsers()
+        public IEnumerable<IUser> LoadAllUsers()
         {
             users.Select(currentUser => (currentUser.vocabulary.LearnedWords = wordRepository.LoadLearnedWords(currentUser)));
             users.Select(currentUser => (currentUser.vocabulary.UnlearnedWords = wordRepository.LoadUnlearnedWords(currentUser)));
@@ -22,9 +26,9 @@ namespace VocabularySprintLibrary.Infrastructure
             return users;
         }
 
-        public User LoadUser(Guid userId)
+        public IUser LoadUser(Guid userId)
         {
-            User user = users.ToList().Find(current => current.UserId == userId);
+            IUser user = users.ToList().Find(current => current.UserId == userId);
 
             if (user == null)
             {
@@ -37,14 +41,14 @@ namespace VocabularySprintLibrary.Infrastructure
             return user;
         }
 
-        public void SaveUser(User user)
+        public void SaveUser(IUser user)
         {
             if (user == null)
             {
                 throw new NotImplementedException();
             }
 
-            List<User> listOfUsers = users.ToList();
+            List<IUser> listOfUsers = users.ToList();
             listOfUsers.Add(user);
 
             file.SaveToFile("Users.json", listOfUsers);
@@ -54,7 +58,7 @@ namespace VocabularySprintLibrary.Infrastructure
         }
 
         public File file { get; }
-        public IEnumerable<User> users { get; }
+        public IEnumerable<IUser> users { get; }
         public IWordRepository wordRepository { get; }
     }
 }

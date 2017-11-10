@@ -48,16 +48,18 @@
     <Compile Include="Application\SprintGame.cs" />
     <Compile Include="Application\VocabularyService.cs" />
     <Compile Include="Domain\DegreeOfLearn.cs" />
+    <Compile Include="Domain\Interfaces\IUser.cs" />
     <Compile Include="Domain\Interfaces\IVocabulary.cs" />
     <Compile Include="Domain\Interfaces\IUserRepository.cs" />
+    <Compile Include="Domain\Interfaces\IWord.cs" />
     <Compile Include="Domain\Interfaces\IWordRepository.cs" />
     <Compile Include="Domain\User.cs" />
     <Compile Include="Application\UserService.cs" />
     <Compile Include="Application\Inerfaces\IUserService.cs" />
     <Compile Include="Domain\Vocabulary.cs" />
     <Compile Include="Infrastructure\File.cs" />
-    <Compile Include="Infrastructure\InMemoryUserRepository.cs" />
-    <Compile Include="Infrastructure\InMemoryWordRepository.cs" />
+    <Compile Include="Infrastructure\InFolderUserRepository.cs" />
+    <Compile Include="Infrastructure\InFolderWordRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Domain\Word.cs" />
   </ItemGroup>

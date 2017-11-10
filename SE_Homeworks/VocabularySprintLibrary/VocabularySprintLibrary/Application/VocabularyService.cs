@@ -2,20 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using VocabularySprintLibrary.Domain;
+using VocabularySprintLibrary.Domain.Interfaces;
 
 namespace VocabularySprintLibrary.Application
 {
-    internal class VocabularyService : IVocabularyService
+    public class VocabularyService : IVocabularyService
     {
-        public VocabularyService(User user)
+        public VocabularyService(IUser user)
         {
-            _vocabulary.LearnedWords = user.vocabulary.LearnedWords;
-            _vocabulary.UnlearnedWords = user.vocabulary.UnlearnedWords;
+            Vocabulary.LearnedWords = user.vocabulary.LearnedWords;
+            Vocabulary.UnlearnedWords = user.vocabulary.UnlearnedWords;
+
+            MaxCountOfLearn = 3;
+            MinCountOfLearn = 0;
 
             random = new Random();
         }
 
-        public bool CheckingAnswer(Word word, string answer)
+        public bool CheckingAnswer(IWord word, string answer)
         {
             if (IsContainingWord(word))
             {
@@ -34,22 +38,13 @@ namespace VocabularySprintLibrary.Application
             }
         }
 
-        public void TracingMistake(Word word)
+        public void TracingMistake(IWord word)
         {
-            //throw new NotImplementedException();
-            word.countOfSuccess = 0;
+            word.countOfSuccess = MinCountOfLearn;
             word.degreeOfLearn = DegreeOfLearn.NotLearned;
-            /*
-            List<Word> unlearnedWords = _vocabulary.UnlearnedWords.ToList();
-            List<Word> learnedWords = _vocabulary.LearnedWords.ToList();
-            learnedWords.Remove(learnedWords.Find(current => (current.WordId == word.WordId)));
-            unlearnedWords.Add(word);
-            _vocabulary.UnlearnedWords = unlearnedWords;
-            _vocabulary.LearnedWords = learnedWords;
-            */
         }
 
-        public void TracingRightAnswer(Word word)
+        public void TracingRightAnswer(IWord word)
         {
             if (IsContainingWord(word))
             {
@@ -58,36 +53,36 @@ namespace VocabularySprintLibrary.Application
 
             word.countOfSuccess++;
 
-            if(word.countOfSuccess == 3)
+            if(word.countOfSuccess == MaxCountOfLearn)
             {
                 word.degreeOfLearn = DegreeOfLearn.Learned;
-                List<Word> unlearnedWords = _vocabulary.UnlearnedWords.ToList();
-                List<Word> learnedWords = _vocabulary.LearnedWords.ToList();
+                List<IWord> unlearnedWords = Vocabulary.UnlearnedWords.ToList();
+                List<IWord> learnedWords = Vocabulary.LearnedWords.ToList();
                 unlearnedWords.Remove(unlearnedWords.Find(current => (current.WordId == word.WordId)));
                 learnedWords.Add(word);
-                _vocabulary.UnlearnedWords = unlearnedWords;
-                _vocabulary.LearnedWords = learnedWords;
+                Vocabulary.UnlearnedWords = unlearnedWords;
+                Vocabulary.LearnedWords = learnedWords;
             }
         }
 
-        public Word GetRandomWord()
+        public IWord GetRandomWord()
         {
-            int IndexOfWordsValue = random.Next(_vocabulary.UnlearnedWords.ToList().Count - 1);
-            int IndexOfWordsTranslation = random.Next(_vocabulary.UnlearnedWords.ToList().Count - 1);
-            Word randomWord = new Word(_vocabulary.UnlearnedWords.ToList()[IndexOfWordsValue].Value, 
-                _vocabulary.UnlearnedWords.ToList()[IndexOfWordsTranslation].RightTranslation);
+            int IndexOfWordsValue = random.Next(Vocabulary.UnlearnedWords.ToList().Count - 1);
+            int IndexOfWordsTranslation = random.Next(Vocabulary.UnlearnedWords.ToList().Count - 1);
+            IWord randomWord = new Word(Vocabulary.UnlearnedWords.ToList()[IndexOfWordsValue].Value,
+                Vocabulary.UnlearnedWords.ToList()[IndexOfWordsTranslation].RightTranslation);
 
             return randomWord;
         }
 
-        public bool IsContainingWord(Word word)
+        public bool IsContainingWord(IWord word)
         {
-            return (_vocabulary.UnlearnedWords.ToList().Exists(current => current.WordId == word.WordId));
+            return (Vocabulary.UnlearnedWords.ToList().Exists(current => current.WordId == word.WordId));
         }
 
-        public IVocabulary _vocabulary { get; set; }
-
-        //private readonly IWordRepository _wordRepository;
+        public IVocabulary Vocabulary { get; private set; }
+        public int MaxCountOfLearn { get; }
+        public int MinCountOfLearn { get; }
 
         Random random;
     }

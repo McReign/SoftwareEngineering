@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using VocabularySprintLibrary.Domain;
+using VocabularySprintLibrary.Domain.Interfaces;
 using VocabularySprintLibrary.Infrastructure;
 
 namespace VocabularySprintLibrary
 {
-    internal interface IUserRepository
+    public interface IUserRepository
     {
-        User LoadUser(Guid userId);
-        void SaveUser(User user);
-        IEnumerable<User> LoadAllUsers();
+        IUser LoadUser(Guid userId);
+        void SaveUser(IUser user);
+        IEnumerable<IUser> LoadAllUsers();
 
         File file { get; }
-        IEnumerable<User> users { get; }
+        IEnumerable<IUser> users { get; }
         IWordRepository wordRepository { get; }
     }
 }

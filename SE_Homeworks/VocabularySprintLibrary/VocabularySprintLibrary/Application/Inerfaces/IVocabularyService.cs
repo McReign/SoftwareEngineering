@@ -1,14 +1,18 @@
 ﻿using VocabularySprintLibrary.Domain;
+using VocabularySprintLibrary.Domain.Interfaces;
 
 namespace VocabularySprintLibrary.Application
 {
-    internal interface IVocabularyService
+    public interface IVocabularyService
     {
-        Word GetRandomWord();
-        bool CheckingAnswer(Word word, string answer);
-        void TracingMistake(Word word);
-        void TracingRightAnswer(Word word);
-        bool IsContainingWord(Word word);
-        IVocabulary _vocabulary { get; set; }
+        IWord GetRandomWord();
+        bool CheckingAnswer(IWord word, string answer);
+        void TracingMistake(IWord word);
+        void TracingRightAnswer(IWord word);
+        bool IsContainingWord(IWord word);
+
+        IVocabulary Vocabulary { get; }
+        int MaxCountOfLearn { get; }
+        int MinCountOfLearn { get; }
     }
 }

@@ -1,13 +1,13 @@
-﻿using System;
+﻿using VocabularySprintLibrary.Domain.Interfaces;
 using VocabularySprintLibrary.Infrastructure;
 
 namespace VocabularySprintLibrary.Application
 {
-    internal class SprintGame : ISprintGame
+    public class SprintGame 
     {
         public SprintGame(string nameOfPlayer)
         {
-            userRepository = new InMemoryUserRepository();
+            userRepository = new InFolderUserRepository();
             NameOfPlayer = nameOfPlayer;
         }
 
@@ -25,8 +25,8 @@ namespace VocabularySprintLibrary.Application
             userRepository.SaveUser(currentUser);
         }
 
-        public IUserRepository userRepository;
-        public string NameOfPlayer;
-        public User currentUser;
+        public IUserRepository userRepository { get; private set; }
+        public string NameOfPlayer { get; }
+        public IUser currentUser { get; private set; }
     }
 }

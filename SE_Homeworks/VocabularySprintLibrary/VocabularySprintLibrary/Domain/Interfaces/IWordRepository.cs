@@ -1,14 +1,15 @@
 ﻿
 using System.Collections.Generic;
+using VocabularySprintLibrary.Domain.Interfaces;
 using VocabularySprintLibrary.Infrastructure;
 
 namespace VocabularySprintLibrary.Domain
 {
-    internal interface IWordRepository
+    public interface IWordRepository
     {
-        void AddWord(User user, Word word);
-        IEnumerable<Word> LoadLearnedWords(User user);
-        IEnumerable<Word> LoadUnlearnedWords(User user);
+        void AddWord(IUser user, IWord word);
+        IEnumerable<IWord> LoadLearnedWords(IUser user);
+        IEnumerable<IWord> LoadUnlearnedWords(IUser user);
 
         File file { get; }
         IUserRepository _userRepository { get; }

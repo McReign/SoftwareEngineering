@@ -1,9 +1,10 @@
 ﻿using System;
 using VocabularySprintLibrary.Domain;
+using VocabularySprintLibrary.Domain.Interfaces;
 
 namespace VocabularySprintLibrary
 {
-    internal class Word
+    public class Word : IWord
     {
         public Word(string value, string rightTranslation)
         {

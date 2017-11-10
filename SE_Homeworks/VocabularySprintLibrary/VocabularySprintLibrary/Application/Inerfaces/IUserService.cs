@@ -2,7 +2,7 @@
 
 namespace VocabularySprintLibrary
 {
-    internal interface IUserService
+    public interface IUserService
     {
         Guid RegistrationUser(string nickname);
     }
